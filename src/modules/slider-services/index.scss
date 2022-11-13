@@ -1,0 +1,21 @@
+.carousel_services {
+    a {
+        position: relative;
+        transition: all 0.5s;
+        .text {
+            position: absolute;
+            padding: 16px;
+            p,
+            h4 {
+                color: white;
+                margin: 0;
+            }
+        }
+        img {
+            width: 100%;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

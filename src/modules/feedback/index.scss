@@ -1,0 +1,45 @@
+.thumb_fb {
+    img {
+        border-radius: 4px;
+    }
+    cursor: pointer;
+    &::after {
+        content: '';
+        display: inline-block;
+        background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png)
+            no-repeat;
+        background-size: 80px;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.fb_content {
+    blockquote {
+        i {
+            font-family: 'DomaineDisplay';
+            font-size: 30px;
+            line-height: 44px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: gray;
+    font-weight: 600;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: #000000 0px 2px 5px 0px;
+    &::after {
+        font-size: 20px;
+    }
+}

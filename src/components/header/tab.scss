@@ -1,0 +1,26 @@
+.tab {
+    .swiper-slide {
+        width: auto;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        height: 20px;
+        width: 20px;
+        top: auto;
+        box-shadow: none;
+        font-weight: 500;
+        background: linear-gradient(270deg, #fff 50%, hsla(0, 0%, 100%, 0));
+        &::after {
+            font-size: 14px;
+        }
+    }
+    .swiper-button-prev.swiper-button-disabled {
+        opacity: 0;
+    }
+    .link {
+        color: #74767e;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

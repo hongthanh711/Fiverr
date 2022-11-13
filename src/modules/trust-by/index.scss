@@ -1,0 +1,19 @@
+.trusted_by {
+    ul {
+        margin: 0;
+        padding: 0 24px;
+
+        li:not(li:last-of-type) {
+            padding-right: 60px;
+        }
+        img {
+            height: 60px;
+            width: auto;
+        }
+    }
+    span {
+        padding-right: 20px;
+        color: #b5b6ba;
+        font-weight: 600;
+    }
+}

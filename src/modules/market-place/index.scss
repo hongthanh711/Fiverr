@@ -1,0 +1,38 @@
+.categories-list {
+    li {
+        width: 20%;
+        a {
+            position: relative;
+            img {
+                width: 48px;
+                height: 48px;
+                &::after {
+                    content: '';
+                    width: 80%;
+                    height: 5px;
+                    background-color: black;
+                    display: block;
+                }
+            }
+            p {
+                margin-top: 10px;
+            }
+            &::after {
+                content: '';
+                width: 25%;
+                height: 2px;
+                display: block;
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #c5c6c9;
+                transition: all 0.2s;
+            }
+            &:hover::after {
+                width: 40%;
+                background-color: #1dbf73;
+            }
+        }
+    }
+}
