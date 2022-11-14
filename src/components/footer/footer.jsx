@@ -14,6 +14,68 @@ import {
 
 import './index.scss'
 
+const categories = [
+    'Graphics & Design',
+    'Digital Marketing',
+    'Writing & Translation',
+    'Video & Animation',
+    'Music & Audio',
+    'Programming & Tech',
+    'Data',
+    'Business',
+    'Lifestyle',
+    'Sitemap',
+]
+
+const about = [
+    'Careers',
+    'Press & News',
+    'Partnerships',
+    'Privacy Policy',
+    'Terms of Service',
+    'Intellectual Property Claims',
+    'Investor Relations',
+]
+
+const support = ['Help & Support', 'Trust & Safety', 'Selling on Fiverr', 'Buying on Fiverr']
+
+const community = [
+    'Events',
+    'Blog',
+    'Forum',
+    'Community Standards',
+    'Podcast',
+    'Affiliates',
+    'Invite a Friend',
+    'Become a Seller',
+]
+
+// const moreFromFiverr = [
+//     'Fiverr Business',
+//     'Fiverr Pro',
+//     'Fiverr Studios',
+//     'Fiverr Logo Maker',
+//     'Fiverr Guides',
+//     'Get Inspired',
+//     'Fiverr Select',
+//     'ClearVoice <p className="footer-subtext">Content Marketing</p>',
+//     'Fiverr Workspace <p className="footer-subtext">Invoice Software</p>',
+//     'Learn  <p className="footer-subtext">Online Course</p>',
+//     'Working Not Working',
+// ]
+
+const renderLink = (list) => {
+    return list.map((ele) => {
+        return (
+            <li className="nav-item" key={ele}>
+                <a href="#" className="nav-link">
+                    {ele}
+                </a>
+            </li>
+        )
+    })
+}
+
 export default function Footer() {
     return (
         <footer className="container">
@@ -22,168 +84,19 @@ export default function Footer() {
                     <div className="row">
                         <div className="col">
                             <h4 className="footer_title ">Categories</h4>
-                            <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Graphics & Design
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Digital Marketing
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Writing & Translation
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Video & Animation
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Music & Audio
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Programming & Tech
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Data
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Business
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Lifestyle
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Sitemap
-                                    </a>
-                                </li>
-                            </ul>
+                            <ul className="nav flex-column">{renderLink(categories)}</ul>
                         </div>
                         <div className="col">
                             <h4 className="footer_title ">About</h4>
-                            <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Careers
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Press & News
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Partnerships
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Terms of Service
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Intellectual Property Claims
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Investor Relations
-                                    </a>
-                                </li>
-                            </ul>
+                            <ul className="nav flex-column">{renderLink(about)}</ul>
                         </div>
                         <div className="col">
                             <h4 className="footer_title ">Support</h4>
-                            <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Help & Support
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Trust & Safety
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Selling on Fiverr
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Buying on Fiverr
-                                    </a>
-                                </li>
-                            </ul>
+                            <ul className="nav flex-column">{renderLink(support)}</ul>
                         </div>
                         <div className="col">
                             <h4 className="footer_title ">Community</h4>
-                            <ul className="nav flex-column">
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Events
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Blog
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Forum
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Community Standards
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Podcast
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Affiliates
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Invite a Friend
-                                    </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Become a Seller
-                                    </a>
-                                </li>
-                            </ul>
+                            <ul className="nav flex-column">{renderLink(community)}</ul>
                         </div>
                         <div className="col">
                             <h4 className="footer_title ">More From Fiverr</h4>
